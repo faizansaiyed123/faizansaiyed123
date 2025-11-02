@@ -1,0 +1,42 @@
+name: 🌆 Generate 3D Cyberpunk Contribution Graph
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs daily at midnight
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Generate 3D Graph
+
+    steps:
+      - name: 🧬 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🌌 Generate 3D Contribution Graph
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: faizansaiyed123
+          # Optional themes: dark, green, red, blue, purple
+          # We'll keep dark for your cyberpunk theme
+        with:
+          settings: |
+            theme=dark
+            hide_border=true
+            radius=12
+
+      - name: 🚀 Push to Output Branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: profile-3d-contrib
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
