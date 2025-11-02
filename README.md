@@ -6,9 +6,9 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FFFF&center=true&vCenter=true&width=600&lines=Backend+Developer;FastAPI+%7C+Django+%7C+Flask;Python+%7C+React+%7C+JavaScript;Clean+Code+%26+Scalable+Systems;Building+AI+%26+Automation+Pipelines" alt="Typing SVG" />
 </p>
 
-<!-- Inline Cyberpunk Bot -->
+<!-- Inline Cyberpunk Genie Bot -->
 <p align="center">
-  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDI4MCAxNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI4MCIgaGVpZ2h0PSIxNDAiIGZpbGw9IiMwMDAiIHJ4PSIxMCIvPjxjaXJjbGUgY3g9IjcwIiBjeT0iNzAiIHI9IjQ1IiBmaWxsPSIjMDAyMTQyIiBzdHJva2U9IiMwMGZmZmYiIHN0cm9rZS13aWR0aD0iMiIvPjxsaW5lIHgxPSI1MCIgeTE9IjExMCIgeDI9IjIwMCIgeTI9IjExMCIgc3Ryb2tlPSIjMDBmZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSI2MCIgeT0iMTIwIiBmaWxsPSIjMDBmZmZmIiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iQ29uc29sYXMiPmZhaXphbi5jb2RpbmcuLi48L3RleHQ+PGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0ieCIgdmFsdWVzPSI2MCA2NTsgNjUgNjA7IiBkdXI9IjFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPjwvc3ZnPg==" width="220px" alt="Cyberpunk Typing Bot" style="border-radius:12px; margin-top:15px;" />
+  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/main/assets/genie.svg" width="220px" alt="Cyberpunk Typing Bot" style="border-radius:12px; margin-top:15px;" />
 </p>
 
 ---
