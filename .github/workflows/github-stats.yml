@@ -1,42 +1,43 @@
-name: 📊 Generate Dynamic GitHub Stats
+name: 📊 Generate GitHub Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *" # runs every day at midnight UTC
+    - cron: "0 0 * * *"  # Runs once daily at midnight UTC
   workflow_dispatch:
-  push:
-    branches:
-      - main
+
+permissions:
+  contents: write  # ✅ Needed so the bot can push changes
 
 jobs:
   build:
-    name: GitHub Stats
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Generate GitHub Stats Images
+      - name: 🧰 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: 📦 Install Dependencies
+        run: npm install -g github-readme-stats
+
+      - name: 📈 Generate GitHub Stats
         run: |
-          mkdir -p output/stats
+          mkdir -p stats
+          curl -o stats/github-stats.svg "https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=radical&count_private=true"
+          curl -o stats/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=faizansaiyed123&layout=compact&theme=radical"
+          curl -o stats/github-streak.svg "https://github-readme-streak-stats.herokuapp.com?user=faizansaiyed123&theme=radical"
 
-          # Stats Card
-          curl -s -o output/stats/github-stats.svg "https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"
-
-          # Streak Card
-          curl -s -o output/stats/github-streak.svg "https://streak-stats.demolab.com?user=faizansaiyed123&theme=tokyonight&hide_border=true"
-
-          # Top Languages Card
-          curl -s -o output/stats/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=faizansaiyed123&layout=compact&theme=tokyonight&hide_border=true"
-
-      - name: Push generated stats
+      - name: 🪄 Commit and Push Changes
         run: |
-          cd output
+          cd stats
           git init
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "📊 Update GitHub Stats" || echo "no changes to commit"
-          git branch -M output
-          git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/faizansaiyed123/faizansaiyed123.git output
+          git commit -m "📊 Update GitHub Stats"
+          git branch -M main
+          git remote add origin "https://github.com/faizansaiyed123/faizansaiyed123.git"
+          git push --force "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/faizansaiyed123/faizansaiyed123.git" main
