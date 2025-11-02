@@ -6,19 +6,9 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FFFF&center=true&vCenter=true&width=600&lines=Backend+Developer;FastAPI+%7C+Django+%7C+Flask;Python+%7C+React+%7C+JavaScript;Clean+Code+%26+Scalable+Systems;Building+AI+%26+Automation+Pipelines" alt="Typing SVG" />
 </p>
 
----
-
-<!-- 🧞 Cyberpunk Genie Animation -->
+<!-- Inline Cyberpunk Genie Bot -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/main/assets/genie-writing.svg"
-       alt="Cyberpunk Genie Typing"
-       width="260px"
-       style="border-radius:12px; margin-top:15px;" />
-</p>
-
-<!-- 🧠 Genie Introducing Faizan -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1200&color=00FFFF&center=true&vCenter=true&width=600&lines=🤖+Hello%2C+I+am+Genie.;Let+me+introduce+my+creator...;Faizan+Saiyed+—+Backend+Developer+%26+AI+Builder.;He+crafts+clean%2C+scalable+systems+using+Python%2C+FastAPI%2C+and+Django.;Let's+explore+his+world+of+automation+%26+AI+✨" alt="Genie Typing About Faizan" />
+  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/main/assets/genie.svg" width="220px" alt="Cyberpunk Typing Bot" style="border-radius:12px; margin-top:15px;" />
 </p>
 
 ---
