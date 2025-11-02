@@ -39,14 +39,10 @@
 ## ⚡ GitHub Stats
 
 <!-- Dynamic Cyberpunk Stats -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/stats/github-stats.svg" alt="GitHub Stats" width="45%" style="border-radius:12px;"/>
-  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/stats/github-streak.svg" alt="GitHub Streak" width="45%" style="border-radius:12px;"/>
-</p>
+<img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/main/output/stats/github-stats.svg" ...
+<img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/main/output/stats/github-streak.svg" ...
+<img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/main/output/stats/top-langs.svg" ...
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/stats/top-langs.svg" alt="Top Languages" width="70%" style="border-radius:12px;"/>
-</p>
 
 <!-- Backup (Live Fallback in case dynamic fails) -->
 <p align="center">
