@@ -1,0 +1,42 @@
+name: 📊 Generate Dynamic GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # runs every day at midnight UTC
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: GitHub Stats
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate GitHub Stats Images
+        run: |
+          mkdir -p output/stats
+
+          # Stats Card
+          curl -s -o output/stats/github-stats.svg "https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"
+
+          # Streak Card
+          curl -s -o output/stats/github-streak.svg "https://streak-stats.demolab.com?user=faizansaiyed123&theme=tokyonight&hide_border=true"
+
+          # Top Languages Card
+          curl -s -o output/stats/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=faizansaiyed123&layout=compact&theme=tokyonight&hide_border=true"
+
+      - name: Push generated stats
+        run: |
+          cd output
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "📊 Update GitHub Stats" || echo "no changes to commit"
+          git branch -M output
+          git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/faizansaiyed123/faizansaiyed123.git output
