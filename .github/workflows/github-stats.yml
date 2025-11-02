@@ -2,7 +2,7 @@ name: 📊 Generate Dynamic GitHub Stats
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *" # Runs daily
   workflow_dispatch:
 
 permissions:
@@ -13,34 +13,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          persist-credentials: false
 
-      - name: Generate GitHub Stats
+      - name: Generate Stats
         run: |
           mkdir -p output/stats
-          echo "🎨 Generating GitHub Stats SVGs..."
-          curl -L -o output/stats/github-stats.svg "https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=radical&hide_border=false&count_private=true&include_all_commits=true"
-          curl -L -o output/stats/github-streak.svg "https://streak-stats.demolab.com?user=faizansaiyed123&theme=radical&hide_border=false"
-          curl -L -o output/stats/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=faizansaiyed123&layout=compact&theme=radical"
-          ls -R output
+          echo "📈 Generating GitHub Stats..."
+          curl -o output/stats/github-stats.svg "https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=tokyonight&hide_border=true&custom_title=Dynamic+Stats+Demo+123"
+          curl -o output/stats/github-streak.svg "https://streak-stats.demolab.com?user=faizansaiyed123&theme=tokyonight&hide_border=true"
+          curl -o output/stats/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=faizansaiyed123&theme=tokyonight&layout=compact"
 
-      - name: Push to output branch
-        env:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit & Push Generated Files
         run: |
-          cd output
-          git init
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git add .
-          git commit -m "📊 Update GitHub Stats ($(date '+%Y-%m-%d %H:%M:%S'))" || echo "No changes to commit"
-
-          # Rename branch to output
-          git branch -M output
-
-          echo "🔐 Pushing to output branch..."
-          git remote add origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git
-          git push origin output --force
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/stats
+          git commit -m "📊 Auto-update GitHub Stats ($(date))" || echo "No changes to commit"
+          git push origin main
