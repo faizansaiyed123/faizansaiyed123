@@ -15,28 +15,30 @@ jobs:
     steps:
       - name: 🧩 Checkout Repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: ⚙️ Generate Stats
         run: |
           mkdir -p output/stats
 
           echo "Generating GitHub Stats..."
-          curl -o output/stats/github-stats.svg "https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=tokyonight&hide_border=true&hide_title=false&count_private=true&custom_title=⚡+LIVE+UPDATE+TEST+—+v2.5"
+          curl -o output/stats/github-stats.svg "https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&custom_title=⚡+Faizan+Stats+Live+Test+v3.1"
 
           echo "Generating GitHub Streak..."
-          curl -o output/stats/github-streak.svg "https://streak-stats.demolab.com?user=faizansaiyed123&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D&fire=00FFFF"
+          curl -o output/stats/github-streak.svg "https://streak-stats.demolab.com?user=faizansaiyed123&theme=tokyonight&hide_border=true&fire=00FFFF"
 
           echo "Generating Top Languages..."
-          curl -o output/stats/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=faizansaiyed123&theme=tokyonight&layout=compact&hide_border=true&custom_title=🔥+Lang+Test+v2.5"
+          curl -o output/stats/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=faizansaiyed123&theme=tokyonight&layout=compact&hide_border=true&custom_title=🔥+Langs+v3.1"
 
-      - name: 🚀 Push Generated Files to output branch
+      - name: 🚀 Push Generated Files
         run: |
           cd output
           git init
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "📊 Update GitHub Stats v2.5" || echo "No changes to commit"
-          git branch -M main
+          git commit -m "📊 Update GitHub Stats v3.1" || echo "No changes to commit"
+          git branch -M output
           git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git push --force origin main:output
+          git push --force origin output
