@@ -36,15 +36,25 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="45" />
 </p>
 
----
-
 ## ⚡ GitHub Stats
 
+<!-- Dynamic Cyberpunk Stats -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/stats/github-stats.svg" alt="GitHub Stats" width="45%" style="border-radius:12px;"/>
+  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/stats/github-streak.svg" alt="GitHub Streak" width="45%" style="border-radius:12px;"/>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/stats/top-langs.svg" alt="Top Languages" width="70%" style="border-radius:12px;"/>
+</p>
+
+<!-- Backup (Live Fallback in case dynamic fails) -->
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=tokyonight&hide_border=true&hide_title=true&count_private=true" width="48%" />
   <img src="https://streak-stats.demolab.com?user=faizansaiyed123&theme=tokyonight&hide_border=true" width="48%" />
 </p>
 
+<!-- Activity Graph -->
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=faizansaiyed123&theme=tokyo-night&radius=12" alt="Activity Graph" width="95%" />
 </p>
