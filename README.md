@@ -70,6 +70,9 @@
   <img alt="GitHub Snake" src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/github-snake-neon.svg" />
 </picture>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/profile-3d-contrib/profile-night-rainbow.svg" width="95%" alt="3D Cyberpunk Contribution Graph" />
+</p>
 ---
 
 <div align="center">
