@@ -2,41 +2,37 @@ name: 🌆 Generate 3D Cyberpunk Contribution Graph
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight
+    - cron: "0 */12 * * *"  # runs twice a day
   workflow_dispatch:
   push:
     branches:
       - main
 
-permissions:
-  contents: write
-
 jobs:
   build:
+    name: 3D Profile Contribution Graph
     runs-on: ubuntu-latest
-    name: Generate 3D Graph
-
     steps:
-      - name: 🧬 Checkout Repository
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: 🌌 Generate 3D Contribution Graph
+      - name: Generate 3D Contribution Graph
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: faizansaiyed123
-          # Optional themes: dark, green, red, blue, purple
-          # We'll keep dark for your cyberpunk theme
-        with:
-          settings: |
-            theme=dark
-            hide_border=true
-            radius=12
+          SETTINGS: "night-rainbow"
+          TITLE: "Faizan's 3D Cyberpunk Contributions"
 
-      - name: 🚀 Push to Output Branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: profile-3d-contrib
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push generated files
+        run: |
+          mkdir -p ./output/profile-3d-contrib
+          mv ./profile-3d-contrib/* ./output/profile-3d-contrib/
+          cd output
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "🌆 Update 3D Cyberpunk Contribution Graph"
+          git branch -M output
+          git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/faizansaiyed123/faizansaiyed123.git output
