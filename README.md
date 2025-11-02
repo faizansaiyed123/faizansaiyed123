@@ -1,11 +1,19 @@
 <h1 align="center">Hi 👋, I'm Faizan Saiyed</h1>
 
-<p align="center">
+<!-- <p align="center">
   <a href="https://komarev.com/ghpvc/?username=faizansaiyed123">
     <img src="https://komarev.com/ghpvc/?username=faizansaiyed123&label=Profile%20views&color=00FFFF&style=flat-square" alt="faizansaiyed123's profile views" />
   </a>
-</p>
+</p> -->
 
+<!-- Professional Robot Banner -->
+<p align="center">
+  <img 
+       src="https://user-images.githubusercontent.com/74038190/221352989-518609ab-b4d1-459e-929f-a08cd2bd9b3c.gif"
+       alt="Robot animation banner"
+       width="65%"
+       style="max-width: 600px; border-radius: 10px; margin-top: 10px; margin-bottom: 20px;" />
+</p>
 
 <img src="https://user-images.githubusercontent.com/74038190/221352989-518609ab-b4d1-459e-929f-a08cd2bd9b3c.gif" alt="Banner" width="100%" />
 
