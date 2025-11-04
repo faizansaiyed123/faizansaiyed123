@@ -61,7 +61,6 @@
 | Project | Description | Tech Stack |
 |----------|--------------|------------|
 | 🧠 [AI Thought Predictor](https://github.com/faizansaiyed123/AI-Unspoken-Thoughts) | Predicts hidden emotions from typing patterns. | Python, ML, Flask |
-| 🌐 [Remote Dev Directory](https://github.com/faizansaiyed123/remote-dev-directory) | Curated list of remote-friendly dev companies. | React, Node.js |
 | ⚙️ [Automation Suite](https://github.com/faizansaiyed123/automation-suite) | End-to-end automation toolkit for developers. | FastAPI, Python |
 
 ---
