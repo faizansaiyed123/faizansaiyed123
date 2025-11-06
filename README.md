@@ -36,10 +36,9 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="45" />
 </p>
 
----
-
 ## ⚡ GitHub Stats
 
+<!-- Dynamic Cyberpunk Stats -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/stats/github-stats.svg" alt="GitHub Stats" width="45%" style="border-radius:12px;"/>
   <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/stats/github-streak.svg" alt="GitHub Streak" width="45%" style="border-radius:12px;"/>
@@ -61,6 +60,7 @@
 | Project | Description | Tech Stack |
 |----------|--------------|------------|
 | 🧠 [AI Thought Predictor](https://github.com/faizansaiyed123/AI-Unspoken-Thoughts) | Predicts hidden emotions from typing patterns. | Python, ML, Flask |
+| 🌐 [Remote Dev Directory](https://github.com/faizansaiyed123/remote-dev-directory) | Curated list of remote-friendly dev companies. | React, Node.js |
 | ⚙️ [Automation Suite](https://github.com/faizansaiyed123/automation-suite) | End-to-end automation toolkit for developers. | FastAPI, Python |
 
 ---
@@ -77,7 +77,6 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/profile-3d-contrib/profile-night-rainbow.svg" width="95%" alt="3D Cyberpunk Contribution Graph" />
 </p>
-
 ---
 
 <div align="center">
