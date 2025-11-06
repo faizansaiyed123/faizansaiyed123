@@ -78,9 +78,3 @@
   <img alt="GitHub Snake" src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/github-snake-neon.svg" />
 </picture>
 
----
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/main/assets/neon-line.gif" width="100%" />
-  <p>🚀 <strong>“Keep coding. Keep glowing.”</strong></p>
-</div>
