@@ -38,5 +38,5 @@ jobs:
           git add .
           git commit -m "🌆 Update 3D Cyberpunk Contribution Graph"
           git branch -M main
-          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git remote add origin https://x-access-token:${{ secrets.ACTIONS_DEPLOY_TOKEN}}@github.com/${{ github.repository }}
           git push --force origin main:output
