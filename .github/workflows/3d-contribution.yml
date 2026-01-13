@@ -2,9 +2,10 @@ name: 🌆 Generate 3D Cyberpunk Contribution Graph
 
 on:
   schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+    - cron: "0 0 * * *" # Runs once daily at midnight UTC
+  workflow_dispatch: # Manual trigger
 
+# ✅ Give GitHub Actions permission to push generated files
 permissions:
   contents: write
 
@@ -15,16 +16,27 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
       - name: Generate 3D contribution graph
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          username: faizansaiyed123
+          style: "night-rainbow"
+          base: "none"
+          output: "profile-3d-contrib"
 
       - name: Commit and push changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p ./output/profile-3d-contrib
+          cp -r ./profile-3d-contrib/* ./output/profile-3d-contrib/
+          cd output
+          git init
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "🌆 Update 3D Cyberpunk Contribution Graph" || echo "No changes"
-          git push
+          git commit -m "🌆 Update 3D Cyberpunk Contribution Graph"
+          git branch -M main
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN}}@github.com/${{ github.repository }}
+          git push --force origin main:output
