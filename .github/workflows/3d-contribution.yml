@@ -2,37 +2,29 @@ name: 🌆 Generate 3D Cyberpunk Contribution Graph
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # runs twice a day
+    - cron: "0 0 * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - main
+
+permissions:
+  contents: write
 
 jobs:
-  build:
-    name: 3D Profile Contribution Graph
+  generate-3d-contribution:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Generate 3D Contribution Graph
+      - name: Generate 3D contribution graph
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: faizansaiyed123
-          SETTINGS: "night-rainbow"
-          TITLE: "Faizan's 3D Cyberpunk Contributions"
+          GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
 
-      - name: Push generated files
+      - name: Commit and push changes
         run: |
-          mkdir -p ./output/profile-3d-contrib
-          mv ./profile-3d-contrib/* ./output/profile-3d-contrib/
-          cd output
-          git init
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "🌆 Update 3D Cyberpunk Contribution Graph"
-          git branch -M output
-          git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/faizansaiyed123/faizansaiyed123.git output
+          git commit -m "🌆 Update 3D Cyberpunk Contribution Graph" || echo "No changes"
+          git push

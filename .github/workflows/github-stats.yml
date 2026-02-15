@@ -11,22 +11,23 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
       - name: Generate Stats
         run: |
           mkdir -p output/stats
-          curl -o output/stats/github-stats.svg "https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=tokyonight&hide_border=true"
+          echo "📈 Generating GitHub Stats..."
+          curl -o output/stats/github-stats.svg "https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=tokyonight&hide_border=true&custom_title=Dynamic+Stats+Demo+123"
           curl -o output/stats/github-streak.svg "https://streak-stats.demolab.com?user=faizansaiyed123&theme=tokyonight&hide_border=true"
           curl -o output/stats/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=faizansaiyed123&theme=tokyonight&layout=compact"
 
-      - name: Push Generated Files
+      - name: Commit & Push Generated Files
         run: |
-          cd output
-          git init
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "📊 Update GitHub Stats"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/stats
+          git commit -m "📊 Auto-update GitHub Stats ($(date))" || echo "No changes to commit"
+          git push origin main
