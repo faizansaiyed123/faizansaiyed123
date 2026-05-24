@@ -40,13 +40,32 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="45" />
 </p>
 
+
 ## ⚡ GitHub Stats
 
-<!-- Dynamic Cyberpunk Stats -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/stats/github-stats.svg" alt="GitHub Stats" width="45%" style="border-radius:12px;"/>
-  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/stats/github-streak.svg" alt="GitHub Streak" width="45%" style="border-radius:12px;"/>
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=tokyonight&hide_border=true"
+    alt="GitHub Stats"
+    width="45%"
+  />
+
+<img
+ src="https://streak-stats.demolab.com?user=faizansaiyed123&theme=tokyonight&hide_border=true"
+ alt="GitHub Streak"
+ width="45%"
+/>
+
 </p>
+
+<p align="center">
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=faizansaiyed123&layout=compact&theme=tokyonight&hide_border=true"
+    alt="Top Languages"
+    width="70%"
+  />
+</p>
+
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/stats/top-langs.svg" alt="Top Languages" width="70%" style="border-radius:12px;"/>
