@@ -45,18 +45,19 @@
 
 <p align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=tokyonight&hide_border=true"
+    src="https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=tokyonight"
     alt="GitHub Stats"
     width="45%"
   />
 
 <img
- src="https://streak-stats.demolab.com?user=faizansaiyed123&theme=tokyonight&hide_border=true"
+ src="https://github-readme-streak-stats.herokuapp.com/?user=faizansaiyed123&theme=tokyonight"
  alt="GitHub Streak"
  width="45%"
 />
 
 </p>
+
 
 <p align="center">
   <img
