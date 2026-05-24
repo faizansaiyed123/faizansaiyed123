@@ -20,6 +20,7 @@ jobs:
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
+          USERNAME: faizansaiyed123
 
       - name: Commit and push changes
         run: |
