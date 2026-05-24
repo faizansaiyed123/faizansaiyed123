@@ -67,10 +67,6 @@
 </p>
 
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/stats/top-langs.svg" alt="Top Languages" width="70%" style="border-radius:12px;"/>
-</p>
-
 <!-- Activity Graph -->
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=faizansaiyed123&theme=tokyo-night&radius=12" alt="Activity Graph" width="95%" />
