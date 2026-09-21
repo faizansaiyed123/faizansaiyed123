@@ -1,133 +1,246 @@
-<!--
-  Faizan Saiyed — GitHub profile
-  Focus: backend systems, realtime applications, async processing, and engineering quality.
--->
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/hero-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/profile/hero-light.svg">
+    <img src="./assets/profile/hero-light.svg" alt="Faizan Saiyed — Full-Stack Engineer focused on backend and systems engineering" width="100%">
+  </picture>
+</p>
 
 <p align="center">
-  <img src="./assets/hero.svg" alt="Faizan Saiyed — backend-focused engineer building systems, APIs and realtime applications" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/signal-rail-dark.gif">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/profile/signal-rail-light.gif">
+    <img src="./assets/profile/signal-rail-light.gif" alt="Animated engineering signal moving across a system rail" width="96%">
+  </picture>
 </p>
 
 <p align="center">
   <a href="https://github.com/faizansaiyed123/FrameFlux-Backend">FrameFlux</a>
-  &nbsp;·&nbsp;
+  ·
   <a href="https://github.com/faizansaiyed123/telemetry-backend">Telemetry</a>
-  &nbsp;·&nbsp;
+  ·
   <a href="https://faizansaiyed123.github.io/portfolio/">Portfolio</a>
-  &nbsp;·&nbsp;
+  ·
   <a href="https://www.linkedin.com/in/faizan-saiyed-52b289228/">LinkedIn</a>
 </p>
 
 ## What I build
 
-I focus on backend-heavy products where the interesting work is behind the interface:
+I build complete web products with a strong focus on the engineering behind the interface: **backend APIs, realtime systems, asynchronous processing, data, security and verification.**
 
-| Area | What that looks like in my work |
-|---|---|
-| **Backend systems** | FastAPI services, API boundaries, PostgreSQL, SQLAlchemy, migrations, authentication and authorization |
-| **Realtime systems** | Authenticated WebSocket streams, live state, alert lifecycles, bounded client-side event buffers and reconnect handling |
-| **Async processing** | Background workers, Redis/ARQ queues, FFmpeg workloads, job progress, resumable uploads and failure-aware processing |
-| **Engineering quality** | Validation, defensive input handling, security checks, unit/integration testing and browser-level end-to-end verification |
+The two systems below are the center of this profile because they show those concerns in different ways.
 
-## Selected systems
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/capability-map-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/profile/capability-map-light.svg">
+  <img src="./assets/profile/capability-map-light.svg" alt="Engineering capability map connecting backend APIs, realtime WebSockets, asynchronous Redis and ARQ work, and Pytest and Playwright verification to FrameFlux and Telemetry" width="100%">
+</picture>
 
-### FrameFlux — asynchronous media processing
+<details>
+<summary><strong>Capability → evidence</strong></summary>
 
-**Backend:** [FrameFlux-Backend](https://github.com/faizansaiyed123/FrameFlux-Backend)  
-**Frontend:** [FrameFlux-Frontend](https://github.com/faizansaiyed123/FrameFlux-Frontend)
+### Backend & APIs
+FastAPI services and explicit HTTP route boundaries are central to both FrameFlux and Telemetry.
 
-A FastAPI media-processing platform built around PostgreSQL, Redis, ARQ background jobs and FFmpeg.
+### Realtime
+Telemetry uses authenticated WebSockets for live telemetry, alert and system-event delivery.
 
-**Verified engineering surface**
+### Async processing
+FrameFlux uses Redis/ARQ background workers for media processing. Telemetry keeps PostgreSQL persistence behind bounded asynchronous processing.
 
-- HTTP APIs for media, projects, jobs, previews, storage and workflow-oriented features
-- Direct and resumable chunked uploads with pause/resume/retry/finalize flows
-- Background processing through ARQ workers instead of keeping heavy FFmpeg work on the request path
-- Media probing, conversion, editing, splitting, clip operations, overlays, transforms and freeze-frame processing
-- Upload validation using extension allowlists, MIME/category checks, size limits and binary-signature inspection
-- PostgreSQL persistence with async SQLAlchemy and Alembic
-- Authentication plus security-focused route and validation tests
+### Data
+PostgreSQL, SQLAlchemy and Alembic appear in the flagship backends. Redis is part of FrameFlux's processing architecture.
 
-<p align="center">
-  <img src="./assets/frameflux-architecture.svg" alt="FrameFlux architecture: FastAPI API, PostgreSQL, Redis and ARQ worker, with FFmpeg processing" width="900" />
-</p>
+### Security
+The flagship systems implement authentication/authorization boundaries; FrameFlux validates uploaded media inputs, while Telemetry uses JWT authentication, Argon2 password hashing and backend-enforced role checks.
 
-### Telemetry — realtime infrastructure observability
+### Verification
+FrameFlux has backend tests covering authentication, authorization, validation/uploads, processing/editing, project APIs and status/jobs. Telemetry has unit and integration tests plus browser-level Playwright coverage in its frontend.
 
-**Backend:** [telemetry-backend](https://github.com/faizansaiyed123/telemetry-backend)  
-**Frontend:** [telemetry-frontend](https://github.com/faizansaiyed123/telemetry-frontend)
+</details>
 
-A real-time infrastructure observability platform that generates correlated synthetic telemetry, detects anomalies, manages alerts and streams live events to authenticated clients.
+---
 
-**Verified engineering surface**
+# FrameFlux
 
-- FastAPI REST API plus authenticated WebSocket streaming
-- CPU, memory, temperature, network throughput, requests/sec, latency and error-rate signals
-- Rolling z-score anomaly detection with alert severity and lifecycle state
-- PostgreSQL persistence through SQLAlchemy + Alembic
-- Bounded asynchronous persistence so database work stays off the main telemetry generation path
-- JWT authentication, Argon2 password hashing and role-based access control
-- Viewer/operator/admin capability boundaries enforced by the backend
-- Simulation controls for start, pause, resume, reset, rate changes and controlled anomaly injection
-- Browser E2E coverage spanning authentication, dashboard streaming, alerts, analytics, hosts, administration, settings, logout guards, mobile navigation and authorization checks
+### Asynchronous media processing
 
-<p align="center">
-  <img src="./assets/telemetry-architecture.svg" alt="Telemetry architecture: FastAPI REST and WebSocket layers around a telemetry manager, anomaly detection and asynchronous PostgreSQL persistence" width="900" />
-</p>
+[Backend repository](https://github.com/faizansaiyed123/FrameFlux-Backend) · [Frontend repository](https://github.com/faizansaiyed123/FrameFlux-Frontend)
 
-## Engineering evidence
+A FastAPI media-processing system built around **PostgreSQL, Redis, ARQ background jobs and FFmpeg**, with a Next.js frontend.
 
-The projects above are useful because they show the same engineering concerns at different system boundaries.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/frameflux-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/profile/frameflux-light.svg">
+  <img src="./assets/profile/frameflux-light.svg" alt="FrameFlux architecture: browser upload flows through validation, Redis and ARQ background processing, a worker and FFmpeg to produce output" width="100%">
+</picture>
 
-<img src="./assets/engineering.svg" alt="Engineering practices spanning API design, realtime delivery, async work, persistence, security and browser verification" width="100%" />
+**Interesting engineering surface**
 
-### Architecture decisions I care about
+- Long-running media work is modeled as background jobs rather than ordinary synchronous CRUD.
+- Resumable uploads expose initialization, chunk transfer, pause/resume, retry, cancellation and finalization flows.
+- Upload boundaries include extension, MIME/category, size and binary-signature validation.
+- Media processing covers probing, conversion, editing, splitting, clip operations, overlays, transformations and freeze-frame workflows.
+- PostgreSQL stores durable application metadata while Redis/ARQ coordinates asynchronous work and progress.
 
-- **Keep expensive work off synchronous request paths.** FrameFlux pushes media processing into ARQ workers; Telemetry keeps PostgreSQL persistence behind a bounded queue.
-- **Make the backend the authority.** Telemetry's UI exposes role-aware behavior, but authorization, JWT validation and user status checks remain backend responsibilities.
-- **Treat inputs as hostile until validated.** FrameFlux validates filenames, extensions, MIME categories, file sizes and executable/script signatures before processing.
-- **Design for observable state.** FrameFlux exposes job/status/progress concepts; Telemetry exposes live sequence/state, alerts, historical data and aggregate statistics.
-- **Verify the user journey, not only the function.** The Telemetry frontend contains a browser-level journey that exercises public entry, authentication, realtime behavior, CRUD, roles, cross-session deactivation, settings and responsive navigation.
+<details>
+<summary><strong>Inspect the implementation</strong></summary>
 
-## Supporting work
+**Architecture**
 
-These repositories add breadth without competing with the two primary systems.
+```mermaid
+flowchart LR
+    Client[Browser / UI] --> API[FastAPI API]
+    API --> DB[(PostgreSQL)]
+    API --> Queue[Redis / ARQ]
+    Queue --> Worker[Background Worker]
+    Worker --> FFmpeg[FFmpeg]
+    Worker --> Storage[Output / Storage]
+```
 
-- [gemini-backend-clone](https://github.com/faizansaiyed123/gemini-backend-clone) — FastAPI AI-chat backend with JWT/OTP flows, chatrooms, Redis-backed asynchronous processing, rate limiting and Stripe subscription handling.
-- [Focus-Journal-Backend](https://github.com/faizansaiyed123/Focus-Journal-Backend) — FastAPI/PostgreSQL backend for journaling, goals, check-ins, analytics and authentication.
-- [Focus-Journal-Frontend](https://github.com/faizansaiyed123/Focus-Journal-Frontend) — React/Vite/Tailwind frontend with analytics, journal, goals, check-ins and application state management.
-- [Sayphora](https://github.com/faizansaiyed123/Sayphora) — Next.js/TypeScript application using Better Auth, Drizzle and Neon/PostgreSQL.
+**Backend evidence**
 
-## Technical stack
+[API composition](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/main.py) ·
+[Worker](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/infrastructure/worker.py) ·
+[Tasks](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/infrastructure/tasks.py) ·
+[Redis](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/infrastructure/redis.py)
 
-**Core backend**  
+**Processing evidence**
+
+[Media engine](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/features/media/engine.py) ·
+[Conversion](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/features/media/conversion.py) ·
+[Editing](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/features/media/editing.py)
+
+**Verification**
+
+[Auth tests](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/tests/test_auth.py) ·
+[Authorization tests](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/tests/test_authorization.py) ·
+[Processing/editing tests](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/tests/test_media_processing_and_editing.py) ·
+[Upload/validation tests](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/tests/test_validation_and_uploads.py)
+
+</details>
+
+---
+
+# Telemetry
+
+### Realtime infrastructure observability
+
+[Backend repository](https://github.com/faizansaiyed123/telemetry-backend) · [Frontend repository](https://github.com/faizansaiyed123/telemetry-frontend)
+
+A FastAPI observability system that generates **synthetic** telemetry, detects anomalies, manages alert state, persists history in PostgreSQL and streams live events over authenticated WebSockets.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/telemetry-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/profile/telemetry-light.svg">
+  <img src="./assets/profile/telemetry-light.svg" alt="Telemetry architecture: synthetic telemetry enters the telemetry manager, passes through anomaly detection and asynchronous persistence, then reaches alerts and an authenticated WebSocket dashboard" width="100%">
+</picture>
+
+**Interesting engineering surface**
+
+- Correlated synthetic signals cover CPU, memory, temperature, network throughput, requests/sec, latency and error rate.
+- Rolling z-score anomaly detection produces alert severity and lifecycle state.
+- Telemetry generation and PostgreSQL persistence are separated by bounded asynchronous processing.
+- Authentication uses JWTs and Argon2 password hashing, with backend-enforced viewer/operator/admin authorization.
+- Simulation controls make realtime state and fault-injection behavior observable from the dashboard.
+- The frontend contains browser-level E2E coverage for authentication, live streaming, alerts, analytics, hosts, administration, authorization, settings, logout protection and responsive navigation.
+
+<details>
+<summary><strong>Inspect the implementation</strong></summary>
+
+**Architecture**
+
+```mermaid
+flowchart LR
+    Source[Synthetic telemetry] --> Manager[Telemetry manager]
+    Manager --> Detect[Anomaly detection]
+    Manager --> Persist[Async persistence]
+    Persist --> DB[(PostgreSQL)]
+    Detect --> Alerts[Alert lifecycle]
+    Manager --> WS[Authenticated WebSocket]
+    Alerts --> WS
+    WS --> Dashboard[Realtime dashboard]
+```
+
+**Runtime evidence**
+
+[Telemetry manager](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/services/telemetry_manager.py) ·
+[Telemetry generator](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/services/telemetry_generator.py) ·
+[Anomaly detector](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/services/anomaly_detector.py) ·
+[WebSocket manager](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/services/websocket_manager.py) ·
+[Telemetry persistence](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/services/telemetry_persistence.py)
+
+**Security evidence**
+
+[Security helpers](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/core/security.py) ·
+[Authorization tests](https://github.com/faizansaiyed123/telemetry-backend/tree/main/tests/unit) ·
+[Auth API tests](https://github.com/faizansaiyed123/telemetry-backend/blob/main/tests/integration/test_auth_api.py)
+
+**Realtime/API verification**
+
+[WebSocket integration tests](https://github.com/faizansaiyed123/telemetry-backend/blob/main/tests/integration/test_websocket.py) ·
+[Telemetry API tests](https://github.com/faizansaiyed123/telemetry-backend/blob/main/tests/integration/test_telemetry_api.py) ·
+[Simulation API tests](https://github.com/faizansaiyed123/telemetry-backend/blob/main/tests/integration/test_simulation_api.py)
+
+**Browser journey**
+
+[Full application E2E flow](https://github.com/faizansaiyed123/telemetry-frontend/blob/main/qa/e2e/test_full_application.py)
+
+</details>
+
+---
+
+## How I engineer
+
+### Separate the expensive work
+Heavy processing belongs behind a job boundary. FrameFlux uses ARQ workers for FFmpeg work; Telemetry isolates database persistence from the generation path.
+
+### Keep the backend authoritative
+The frontend can expose role-aware controls, but protected operations remain backend responsibilities. Telemetry's authorization model is enforced by the API.
+
+### Validate at the boundary
+Inputs should be rejected before they reach expensive or security-sensitive processing. FrameFlux's upload pipeline reflects that principle directly.
+
+### Verify behavior, not just code paths
+Unit and integration tests cover backend behavior; the Telemetry frontend also exercises complete browser journeys against the application boundary.
+
+## Core stack
+
+**Backend**  
 Python · FastAPI · PostgreSQL · SQLAlchemy · Alembic · Pydantic
 
-**Systems & async**  
+**Systems**  
 Redis · ARQ · WebSockets · FFmpeg · Uvicorn
 
 **Frontend**  
-React · Next.js · TypeScript · JavaScript · Vite · Tailwind CSS
+React · Next.js · TypeScript · Vite · Tailwind CSS
 
-**Testing & delivery**  
+**Engineering**  
 Pytest · Playwright · Docker · GitHub Actions
 
-**Additional experience**  
-Django · Flask · OAuth · OpenAI API · Stripe
+## Engineering state
+
+| Concern | Evidence |
+|---|---|
+| APIs | FastAPI services and feature-oriented route boundaries |
+| Realtime | Authenticated WebSocket streaming in Telemetry |
+| Async work | Redis/ARQ workers in FrameFlux; bounded persistence in Telemetry |
+| Data | PostgreSQL + SQLAlchemy + Alembic |
+| Security | JWT, Argon2, authorization checks, input validation |
+| Verification | Unit, integration and browser-level E2E coverage |
 
 ## Current focus
 
-Building deeper systems experience around:
+**Realtime delivery · asynchronous processing · backend API design · authentication/authorization · testing confidence**
 
-**realtime delivery · asynchronous processing · production-oriented API design · authentication/authorization · testing confidence**
+## Evidence map
 
-## Engineering map
+For a deeper, fact-checked index of the profile's technical claims:
 
-I keep the profile intentionally selective. Public learning repositories, forks and small experiments remain part of the GitHub history, but the profile foregrounds original systems that best demonstrate how I design, build and verify software.
-
-[Open the engineering evidence map →](./docs/ENGINEERING.md)
+**[Open the engineering evidence map →](./docs/ENGINEERING.md)**
 
 ---
 
 <p align="center">
-  <sub>Backend-first engineer · systems, APIs, realtime applications and reliable async workflows</sub>
+  <sub>Full-Stack Engineer · Backend & Systems</sub>
 </p>
