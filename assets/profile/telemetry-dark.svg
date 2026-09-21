@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+<title id="title">Telemetry architecture — realtime observability</title>
+<desc id="desc">Telemetry flow from synthetic signal generation through anomaly detection, alerting, asynchronous persistence and authenticated WebSockets to the dashboard.</desc>
+<defs>
+  <linearGradient id="fade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1117"/><stop offset="1" stop-color="#111922"/></linearGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#8B9AA8" stroke-opacity=".16"/></pattern>
+</defs>
+<rect width="100%" height="100%" rx="22" fill="url(#fade)"/>
+<text x="50" y="48" fill="#F0F6FC" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="750">Telemetry · realtime observability</text>
+<text x="50" y="73" fill="#8B9AA8" font-family="Inter,Arial,sans-serif" font-size="14">generate → detect → persist → stream</text>
+<g><rect x="50" y="125" width="190" height="92" rx="14" fill="#111922" stroke="#8B9AA8" stroke-width="1.5"/>
+<text x="68" y="151" fill="#49D3E6" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">SOURCE</text>
+<text x="68" y="176" fill="#F0F6FC" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">Synthetic telemetry</text></g>
+<g><rect x="300" y="125" width="210" height="92" rx="14" fill="#111922" stroke="#8B9AA8" stroke-width="1.5"/>
+<text x="318" y="151" fill="#49D3E6" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">RUNTIME</text>
+<text x="318" y="176" fill="#F0F6FC" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">Telemetry manager</text></g>
+<g><rect x="570" y="95" width="210" height="92" rx="14" fill="#111922" stroke="#8B9AA8" stroke-width="1.5"/>
+<text x="588" y="121" fill="#49D3E6" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">ANALYSIS</text>
+<text x="588" y="146" fill="#F0F6FC" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">Anomaly detection</text></g>
+<g><rect x="570" y="215" width="210" height="92" rx="14" fill="#111922" stroke="#8B9AA8" stroke-width="1.5"/>
+<text x="588" y="241" fill="#49D3E6" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">DATA</text>
+<text x="588" y="266" fill="#F0F6FC" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">Async persistence</text></g>
+<g><rect x="840" y="95" width="150" height="92" rx="14" fill="#111922" stroke="#8B9AA8" stroke-width="1.5"/>
+<text x="858" y="121" fill="#49D3E6" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">ALERTS</text>
+<text x="858" y="146" fill="#F0F6FC" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">Lifecycle</text></g>
+<g><rect x="840" y="215" width="150" height="92" rx="14" fill="#111922" stroke="#8B9AA8" stroke-width="1.5"/>
+<text x="858" y="241" fill="#49D3E6" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">STREAM</text>
+<text x="858" y="266" fill="#F0F6FC" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">WebSocket</text></g>
+<g><rect x="1025" y="155" width="125" height="92" rx="14" fill="#111922" stroke="#8B9AA8" stroke-width="1.5"/>
+<text x="1043" y="181" fill="#49D3E6" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">CLIENT</text>
+<text x="1043" y="206" fill="#F0F6FC" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">Dashboard</text></g>
+<path d="M240 171H300 M510 155H570 M675 187V215 M780 141H840 M780 261H840 M990 261H1025" stroke="#49D3E6" stroke-width="2.5"/>
+<circle cx="270" cy="171" r="4" fill="#49D3E6"/><circle cx="540" cy="155" r="4" fill="#49D3E6"/><circle cx="813" cy="141" r="4" fill="#49D3E6"/><circle cx="1006" cy="261" r="4" fill="#49D3E6"/>
+<path d="M675 187 C790 175 835 170 840 187" fill="none" stroke="#8B9AA8" stroke-opacity=".65" stroke-width="1.5" stroke-dasharray="6 7"/>
+<text x="50" y="365" fill="#8B9AA8" font-family="Inter,Arial,sans-serif" font-size="13">Authenticated WebSockets · alert lifecycle · PostgreSQL persistence · role-aware backend</text>
+</svg>
