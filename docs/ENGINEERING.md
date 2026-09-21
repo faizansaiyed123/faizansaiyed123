@@ -1,57 +1,91 @@
 # Engineering Evidence
 
-This page is the profile's fact-checkable index. It intentionally points back to repository code and documentation rather than repeating marketing claims.
+This document is the profile's fact-checkable index. The profile is intentionally selective: it highlights **FrameFlux** and **Telemetry** and points back to their repositories for implementation evidence.
 
-## Primary systems
-
-### FrameFlux
+## FrameFlux
 
 **Repositories**
 
 - [FrameFlux-Backend](https://github.com/faizansaiyed123/FrameFlux-Backend)
 - [FrameFlux-Frontend](https://github.com/faizansaiyed123/FrameFlux-Frontend)
 
-**Evidence**
+**Architecture evidence**
 
-- Backend service composition and route registration: [app/main.py](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/main.py)
-- Backend dependency/runtime definition: [pyproject.toml](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/pyproject.toml)
-- Architecture, upload validation, background jobs and API surface: [README.md](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/README.md)
-- Frontend stack includes Next.js, React, TypeScript, Zustand and Playwright: [package.json](https://github.com/faizansaiyed123/FrameFlux-Frontend/blob/main/package.json)
+- [Backend application composition](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/main.py)
+- [Worker](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/infrastructure/worker.py)
+- [Background tasks](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/infrastructure/tasks.py)
+- [Redis infrastructure](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/infrastructure/redis.py)
+- [Media engine](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/features/media/engine.py)
+- [Conversion](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/features/media/conversion.py)
+- [Editing](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/app/features/media/editing.py)
 
-### Telemetry
+**Verification evidence**
+
+- [Authentication tests](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/tests/test_auth.py)
+- [Authorization tests](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/tests/test_authorization.py)
+- [Processing/editing tests](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/tests/test_media_processing_and_editing.py)
+- [Upload/validation tests](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/tests/test_validation_and_uploads.py)
+- [Status/job tests](https://github.com/faizansaiyed123/FrameFlux-Backend/blob/main/tests/test_status_and_jobs.py)
+
+## Telemetry
 
 **Repositories**
 
 - [telemetry-backend](https://github.com/faizansaiyed123/telemetry-backend)
 - [telemetry-frontend](https://github.com/faizansaiyed123/telemetry-frontend)
 
-**Evidence**
+**Runtime evidence**
 
-- Backend architecture, REST API, WebSocket contract, persistence design, auth/RBAC and testing scope: [README.md](https://github.com/faizansaiyed123/telemetry-backend/blob/main/README.md)
-- Password hashing and JWT token implementation: [app/core/security.py](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/core/security.py)
-- End-to-end browser journey covering public entry, authentication, live telemetry, simulation, alerts, analytics, hosts, administration, roles, settings, logout guards and mobile navigation: [qa/e2e/test_full_application.py](https://github.com/faizansaiyed123/telemetry-frontend/blob/main/qa/e2e/test_full_application.py)
-- Frontend stack and scripts: [package.json](https://github.com/faizansaiyed123/telemetry-frontend/blob/main/package.json)
+- [Telemetry manager](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/services/telemetry_manager.py)
+- [Telemetry generator](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/services/telemetry_generator.py)
+- [Anomaly detector](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/services/anomaly_detector.py)
+- [Telemetry persistence](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/services/telemetry_persistence.py)
+- [Alert persistence](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/services/alert_persistence.py)
+- [WebSocket manager](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/services/websocket_manager.py)
+- [WebSocket API](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/api/websocket.py)
+- [Telemetry API](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/api/telemetry.py)
 
-## Engineering themes
+**Security evidence**
 
-The profile emphasizes four themes because they recur across the verified repositories:
+- [Authentication API](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/api/auth.py)
+- [Security helpers](https://github.com/faizansaiyed123/telemetry-backend/blob/main/app/core/security.py)
+- [Authorization tests](https://github.com/faizansaiyed123/telemetry-backend/blob/main/tests/unit/test_authorization.py)
+- [Security tests](https://github.com/faizansaiyed123/telemetry-backend/blob/main/tests/unit/test_security.py)
 
-1. **Backend-first system design** — APIs are explicit, state is modeled, and persistence is deliberate.
-2. **Realtime behavior** — Telemetry uses authenticated WebSockets and bounded runtime state; the frontend separates transport events from rendering.
-3. **Asynchronous workloads** — FrameFlux delegates heavy FFmpeg work to background workers; Telemetry isolates database persistence from generation.
-4. **Verification** — both repositories include automated tests, while Telemetry additionally contains a browser-level end-to-end journey that validates complete user flows.
+**Realtime and integration verification**
 
-## Repository curation
+- [Telemetry API integration tests](https://github.com/faizansaiyed123/telemetry-backend/blob/main/tests/integration/test_telemetry_api.py)
+- [WebSocket integration tests](https://github.com/faizansaiyed123/telemetry-backend/blob/main/tests/integration/test_websocket.py)
+- [Simulation API integration tests](https://github.com/faizansaiyed123/telemetry-backend/blob/main/tests/integration/test_simulation_api.py)
+- [Full browser journey](https://github.com/faizansaiyed123/telemetry-frontend/blob/main/qa/e2e/test_full_application.py)
 
-The GitHub account contains a mix of flagship systems, supporting applications, learning repositories and forks. The public profile deliberately foregrounds original engineering work and does not present forks as authored systems.
+## What the profile deliberately does not claim
 
-That distinction matters: a portfolio is more credible when project ownership and technical evidence are explicit.
+- Telemetry is **synthetic telemetry**, not a claim of production host-agent monitoring.
+- Redis/ARQ belongs to the current FrameFlux architecture; Redis is intentionally not part of the current Telemetry architecture.
+- No arbitrary expertise scores, performance numbers, user counts or production-scale metrics are presented.
+- No Kubernetes, cloud-platform or distributed-systems expertise is claimed solely from these repositories.
+- The profile does not present forks, learning repositories or small experiments as flagship authored systems.
 
-## Scope discipline
+## Visual system
 
-Claims on the profile are intentionally limited to what can be supported by the current repositories. For example:
+The profile uses a single visual language:
 
-- Telemetry is described as **synthetic infrastructure telemetry**, not real production host monitoring.
-- Redis/ARQ are associated with **FrameFlux** and not with the current Telemetry architecture.
-- ML/AI experience is presented as **additional project experience**, not as the primary engineering identity.
-- The profile does not claim Kubernetes, cloud-platform expertise, distributed-systems expertise, or production scale that is not directly demonstrated by the repositories.
+- **Signal Rail** — represents data, jobs and events moving through a system.
+- **Graphite surfaces + cyan/teal signal accent** — consistent across dark and light themes.
+- **Custom diagrams** — presentation layer for architecture.
+- **Mermaid** — inspectable, GitHub-native technical representation inside expandable sections.
+- **One restrained animated GIF** — the Signal Rail; no script-driven README animation or third-party dashboard widgets.
+
+## Future project contract
+
+New projects can reuse the same profile structure without redesigning the page:
+
+1. Project name + category
+2. One-sentence purpose
+3. Custom light/dark architecture visual
+4. Three or fewer engineering highlights
+5. Expandable implementation evidence
+6. Repository / architecture / demo links
+
+The identity stays stable while the evidence grows.
