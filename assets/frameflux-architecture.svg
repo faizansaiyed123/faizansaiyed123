@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 410" role="img" aria-labelledby="title desc">
+  <title id="title">FrameFlux architecture</title>
+  <desc id="desc">FastAPI receives requests, PostgreSQL stores metadata, Redis coordinates queue and progress state, ARQ workers run FFmpeg processing.</desc>
+  <rect width="1200" height="410" rx="18" fill="#0c1218"/>
+  <g font-family="Inter,Arial,sans-serif">
+    <text x="55" y="52" fill="#f4f7fa" font-size="25" font-weight="700">FrameFlux · asynchronous media pipeline</text>
+    <text x="55" y="80" fill="#8da2b5" font-size="16">heavy media work stays off the HTTP request path</text>
+
+    <rect x="55" y="125" width="195" height="105" rx="14" fill="#111a22" stroke="#2a3a46"/>
+    <text x="78" y="158" fill="#49d3e6" font-size="15" font-weight="700">CLIENT / UI</text>
+    <text x="78" y="186" fill="#c6d2dc" font-size="16">Upload + control</text>
+    <text x="78" y="210" fill="#8da2b5" font-size="14">status / progress</text>
+
+    <rect x="330" y="110" width="225" height="135" rx="14" fill="#101922" stroke="#49d3e6"/>
+    <text x="355" y="148" fill="#49d3e6" font-size="15" font-weight="700">FASTAPI</text>
+    <text x="355" y="176" fill="#f4f7fa" font-size="18" font-weight="700">HTTP API</text>
+    <text x="355" y="205" fill="#8da2b5" font-size="14">validation · auth · jobs</text>
+    <text x="355" y="226" fill="#8da2b5" font-size="14">media · projects · workflow</text>
+
+    <rect x="635" y="82" width="220" height="95" rx="14" fill="#111a22" stroke="#2a3a46"/>
+    <text x="660" y="118" fill="#49d3e6" font-size="15" font-weight="700">POSTGRESQL</text>
+    <text x="660" y="145" fill="#8da2b5" font-size="14">metadata · projects · state</text>
+
+    <rect x="635" y="205" width="220" height="95" rx="14" fill="#111a22" stroke="#2a3a46"/>
+    <text x="660" y="241" fill="#49d3e6" font-size="15" font-weight="700">REDIS + ARQ</text>
+    <text x="660" y="268" fill="#8da2b5" font-size="14">queue · progress · worker jobs</text>
+
+    <rect x="935" y="125" width="210" height="150" rx="14" fill="#101922" stroke="#49d3e6"/>
+    <text x="960" y="160" fill="#49d3e6" font-size="15" font-weight="700">WORKER</text>
+    <text x="960" y="188" fill="#f4f7fa" font-size="18" font-weight="700">FFmpeg</text>
+    <text x="960" y="214" fill="#8da2b5" font-size="14">probe · convert</text>
+    <text x="960" y="236" fill="#8da2b5" font-size="14">edit · split · merge</text>
+    <text x="960" y="258" fill="#8da2b5" font-size="14">transform · overlay</text>
+
+    <path d="M250 178 H330" stroke="#49d3e6" stroke-width="2.5" marker-end="url(#a)"/>
+    <path d="M555 154 H635" stroke="#49d3e6" stroke-width="2.5" marker-end="url(#a)"/>
+    <path d="M555 217 H635" stroke="#49d3e6" stroke-width="2.5" marker-end="url(#a)"/>
+    <path d="M855 252 H935" stroke="#49d3e6" stroke-width="2.5" marker-end="url(#a)"/>
+    <path d="M935 285 C820 330 610 330 555 245" fill="none" stroke="#718393" stroke-width="2" stroke-dasharray="7 7"/>
+
+    <rect x="55" y="335" width="1090" height="38" rx="10" fill="#0f171f" stroke="#1f2b35"/>
+    <text x="75" y="360" fill="#9bb0c0" font-size="13">Defensive input validation · resumable uploads · job status/progress · persistent metadata · asynchronous processing</text>
+  </g>
+  <defs>
+    <marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 z" fill="#49d3e6"/></marker>
+  </defs>
+</svg>
