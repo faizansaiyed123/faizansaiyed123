@@ -1,95 +1,133 @@
-<!-- Cyberpunk × Clean Developer GitHub Profile by Faizan Saiyed -->
-
-<h1 align="center">⚡ Hey there, I’m <span style="color:#00FFFF;">Faizan Saiyed</span></h1>
+<!--
+  Faizan Saiyed — GitHub profile
+  Focus: backend systems, realtime applications, async processing, and engineering quality.
+-->
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=00FFFF&center=true&vCenter=true&width=600&lines=Backend+Developer;FastAPI+%7C+Django+%7C+Flask;Python+%7C+React+%7C+JavaScript;Clean+Code+%26+Scalable+Systems;Building+AI+%26+Automation+Pipelines" alt="Typing SVG" />
+  <img src="./assets/hero.svg" alt="Faizan Saiyed — backend-focused engineer building systems, APIs and realtime applications" width="100%" />
 </p>
 
-<!-- Inline Cyberpunk Genie Bot (Clickable) -->
 <p align="center">
-  <a href="https://faizansaiyed123.github.io/faizan-ai-bot/" target="_blank">
-    <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/main/assets/genie.svg" width="220px" alt="Talk to me, click on Gini" style="border-radius:12px; margin-top:15px;" />
-  </a>
-  <br/>
-  <em>Talk to me — click on Gini 🤖</em>
+  <a href="https://github.com/faizansaiyed123/FrameFlux-Backend">FrameFlux</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/faizansaiyed123/telemetry-backend">Telemetry</a>
+  &nbsp;·&nbsp;
+  <a href="https://faizansaiyed123.github.io/portfolio/">Portfolio</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/faizan-saiyed-52b289228/">LinkedIn</a>
 </p>
+
+## What I build
+
+I focus on backend-heavy products where the interesting work is behind the interface:
+
+| Area | What that looks like in my work |
+|---|---|
+| **Backend systems** | FastAPI services, API boundaries, PostgreSQL, SQLAlchemy, migrations, authentication and authorization |
+| **Realtime systems** | Authenticated WebSocket streams, live state, alert lifecycles, bounded client-side event buffers and reconnect handling |
+| **Async processing** | Background workers, Redis/ARQ queues, FFmpeg workloads, job progress, resumable uploads and failure-aware processing |
+| **Engineering quality** | Validation, defensive input handling, security checks, unit/integration testing and browser-level end-to-end verification |
+
+## Selected systems
+
+### FrameFlux — asynchronous media processing
+
+**Backend:** [FrameFlux-Backend](https://github.com/faizansaiyed123/FrameFlux-Backend)  
+**Frontend:** [FrameFlux-Frontend](https://github.com/faizansaiyed123/FrameFlux-Frontend)
+
+A FastAPI media-processing platform built around PostgreSQL, Redis, ARQ background jobs and FFmpeg.
+
+**Verified engineering surface**
+
+- HTTP APIs for media, projects, jobs, previews, storage and workflow-oriented features
+- Direct and resumable chunked uploads with pause/resume/retry/finalize flows
+- Background processing through ARQ workers instead of keeping heavy FFmpeg work on the request path
+- Media probing, conversion, editing, splitting, clip operations, overlays, transforms and freeze-frame processing
+- Upload validation using extension allowlists, MIME/category checks, size limits and binary-signature inspection
+- PostgreSQL persistence with async SQLAlchemy and Alembic
+- Authentication plus security-focused route and validation tests
+
+<p align="center">
+  <img src="./assets/frameflux-architecture.svg" alt="FrameFlux architecture: FastAPI API, PostgreSQL, Redis and ARQ worker, with FFmpeg processing" width="900" />
+</p>
+
+### Telemetry — realtime infrastructure observability
+
+**Backend:** [telemetry-backend](https://github.com/faizansaiyed123/telemetry-backend)  
+**Frontend:** [telemetry-frontend](https://github.com/faizansaiyed123/telemetry-frontend)
+
+A real-time infrastructure observability platform that generates correlated synthetic telemetry, detects anomalies, manages alerts and streams live events to authenticated clients.
+
+**Verified engineering surface**
+
+- FastAPI REST API plus authenticated WebSocket streaming
+- CPU, memory, temperature, network throughput, requests/sec, latency and error-rate signals
+- Rolling z-score anomaly detection with alert severity and lifecycle state
+- PostgreSQL persistence through SQLAlchemy + Alembic
+- Bounded asynchronous persistence so database work stays off the main telemetry generation path
+- JWT authentication, Argon2 password hashing and role-based access control
+- Viewer/operator/admin capability boundaries enforced by the backend
+- Simulation controls for start, pause, resume, reset, rate changes and controlled anomaly injection
+- Browser E2E coverage spanning authentication, dashboard streaming, alerts, analytics, hosts, administration, settings, logout guards, mobile navigation and authorization checks
+
+<p align="center">
+  <img src="./assets/telemetry-architecture.svg" alt="Telemetry architecture: FastAPI REST and WebSocket layers around a telemetry manager, anomaly detection and asynchronous PostgreSQL persistence" width="900" />
+</p>
+
+## Engineering evidence
+
+The projects above are useful because they show the same engineering concerns at different system boundaries.
+
+<img src="./assets/engineering.svg" alt="Engineering practices spanning API design, realtime delivery, async work, persistence, security and browser verification" width="100%" />
+
+### Architecture decisions I care about
+
+- **Keep expensive work off synchronous request paths.** FrameFlux pushes media processing into ARQ workers; Telemetry keeps PostgreSQL persistence behind a bounded queue.
+- **Make the backend the authority.** Telemetry's UI exposes role-aware behavior, but authorization, JWT validation and user status checks remain backend responsibilities.
+- **Treat inputs as hostile until validated.** FrameFlux validates filenames, extensions, MIME categories, file sizes and executable/script signatures before processing.
+- **Design for observable state.** FrameFlux exposes job/status/progress concepts; Telemetry exposes live sequence/state, alerts, historical data and aggregate statistics.
+- **Verify the user journey, not only the function.** The Telemetry frontend contains a browser-level journey that exercises public entry, authentication, realtime behavior, CRUD, roles, cross-session deactivation, settings and responsive navigation.
+
+## Supporting work
+
+These repositories add breadth without competing with the two primary systems.
+
+- [gemini-backend-clone](https://github.com/faizansaiyed123/gemini-backend-clone) — FastAPI AI-chat backend with JWT/OTP flows, chatrooms, Redis-backed asynchronous processing, rate limiting and Stripe subscription handling.
+- [Focus-Journal-Backend](https://github.com/faizansaiyed123/Focus-Journal-Backend) — FastAPI/PostgreSQL backend for journaling, goals, check-ins, analytics and authentication.
+- [Focus-Journal-Frontend](https://github.com/faizansaiyed123/Focus-Journal-Frontend) — React/Vite/Tailwind frontend with analytics, journal, goals, check-ins and application state management.
+- [Sayphora](https://github.com/faizansaiyed123/Sayphora) — Next.js/TypeScript application using Better Auth, Drizzle and Neon/PostgreSQL.
+
+## Technical stack
+
+**Core backend**  
+Python · FastAPI · PostgreSQL · SQLAlchemy · Alembic · Pydantic
+
+**Systems & async**  
+Redis · ARQ · WebSockets · FFmpeg · Uvicorn
+
+**Frontend**  
+React · Next.js · TypeScript · JavaScript · Vite · Tailwind CSS
+
+**Testing & delivery**  
+Pytest · Playwright · Docker · GitHub Actions
+
+**Additional experience**  
+Django · Flask · OAuth · OpenAI API · Stripe
+
+## Current focus
+
+Building deeper systems experience around:
+
+**realtime delivery · asynchronous processing · production-oriented API design · authentication/authorization · testing confidence**
+
+## Engineering map
+
+I keep the profile intentionally selective. Public learning repositories, forks and small experiments remain part of the GitHub history, but the profile foregrounds original systems that best demonstrate how I design, build and verify software.
+
+[Open the engineering evidence map →](./docs/ENGINEERING.md)
 
 ---
 
-## 🧠 About Me
-> Building clean, scalable backends that make ideas come alive.
-
-- ⚙️ **Backend Developer** passionate about FastAPI, Flask & Django  
-- 🧩 Designing efficient REST APIs and automation pipelines  
-- ⚡ Skilled in **Python**, **React.js**, **JavaScript**, **HTML**, **CSS**  
-- 🧠 Focused on performance, maintainability & developer experience  
-- 🌐 Exploring AI-driven automation and distributed systems  
-
----
-
-## 🧰 Tech Stack
-
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="45" />
+  <sub>Backend-first engineer · systems, APIs, realtime applications and reliable async workflows</sub>
 </p>
-
-
-## ⚡ GitHub Stats
-
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=faizansaiyed123&show_icons=true&theme=tokyonight"
-    alt="GitHub Stats"
-    width="45%"
-  />
-
-<img
- src="https://github-readme-streak-stats.herokuapp.com/?user=faizansaiyed123&theme=tokyonight"
- alt="GitHub Streak"
- width="45%"
-/>
-
-</p>
-
-
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=faizansaiyed123&layout=compact"
-    alt="Top Languages"
-    width="70%"
-  />
-</p>
-
-
-<!-- Activity Graph -->
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=faizansaiyed123&theme=tokyo-night&radius=12" alt="Activity Graph" width="95%" />
-</p>
-
----
-
-## 🚀 Featured Projects
-
-| Project | Description | Tech Stack |
-|----------|--------------|------------|
-| 🧠 [AI Thought Predictor](https://github.com/faizansaiyed123/AI-Unspoken-Thoughts) | Predicts hidden emotions from typing patterns. | Python, ML, Flask |
-| ⚙️ [Automation Suite](https://github.com/faizansaiyed123/automation-suite) | End-to-end automation toolkit for developers. | FastAPI, Python |
-
----
-
-## 💬 Quote
-> “In the silence of the terminal, code becomes poetry.”
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/github-snake-neon.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/github-snake.svg" />
-  <img alt="GitHub Snake" src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/output/github-snake-neon.svg" />
-</picture>
-
