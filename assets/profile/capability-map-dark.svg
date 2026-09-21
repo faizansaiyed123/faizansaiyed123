@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">Engineering capability map</title>
+<desc id="desc">Capabilities mapped to demonstrated engineering systems and verification practices.</desc>
+<defs>
+  <linearGradient id="fade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1117"/><stop offset="1" stop-color="#111922"/></linearGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#8B9AA8" stroke-opacity=".16"/></pattern>
+</defs>
+<rect width="100%" height="100%" rx="22" fill="url(#fade)"/>
+<text x="54" y="55" fill="#F0F6FC" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="750">Engineering capability map</text>
+<text x="54" y="82" fill="#8B9AA8" font-family="Inter,Arial,sans-serif" font-size="15">Capability → project → concrete implementation</text>
+<path d="M600 132 C470 132 420 175 330 175 M600 132 C730 132 780 175 870 175 M600 132V175 M600 175 C500 195 450 230 350 250 M600 175 C700 195 750 230 850 250" fill="none" stroke="#49D3E6" stroke-opacity=".55" stroke-width="2"/>
+<circle cx="600" cy="132" r="20" fill="#111922" stroke="#49D3E6" stroke-width="2"/>
+<text x="600" y="137" text-anchor="middle" fill="#49D3E6" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="800">BUILD</text>
+<g><rect x="210" y="155" width="240" height="78" rx="14" fill="#111922" stroke="#8B9AA8" stroke-width="1.5"/>
+<text x="228" y="181" fill="#49D3E6" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">BACKEND</text>
+<text x="228" y="206" fill="#F0F6FC" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">FastAPI / APIs</text></g>
+<g><rect x="750" y="155" width="240" height="78" rx="14" fill="#111922" stroke="#8B9AA8" stroke-width="1.5"/>
+<text x="768" y="181" fill="#49D3E6" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">REALTIME</text>
+<text x="768" y="206" fill="#F0F6FC" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">WebSockets</text></g>
+<g><rect x="210" y="250" width="240" height="78" rx="14" fill="#111922" stroke="#8B9AA8" stroke-width="1.5"/>
+<text x="228" y="276" fill="#49D3E6" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">ASYNC</text>
+<text x="228" y="301" fill="#F0F6FC" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">Redis / ARQ</text></g>
+<g><rect x="750" y="250" width="240" height="78" rx="14" fill="#111922" stroke="#8B9AA8" stroke-width="1.5"/>
+<text x="768" y="276" fill="#49D3E6" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">VERIFY</text>
+<text x="768" y="301" fill="#F0F6FC" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">Pytest / Playwright</text></g>
+<text x="600" y="214" text-anchor="middle" fill="#8B9AA8" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">FrameFlux + Telemetry</text>
+</svg>
