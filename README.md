@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/hero-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/profile/hero-light.svg">
-    <img src="./assets/profile/hero-light.svg" alt="Faizan Saiyed — Full-Stack Engineer focused on backend and systems engineering" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/main/assets/profile/hero-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/main/assets/profile/hero-light.svg">
+    <img src="https://raw.githubusercontent.com/faizansaiyed123/faizansaiyed123/main/assets/profile/hero-light.svg" alt="Faizan Saiyed — Full-Stack Engineer focused on backend and systems engineering" width="100%">
   </picture>
 </p>
 
