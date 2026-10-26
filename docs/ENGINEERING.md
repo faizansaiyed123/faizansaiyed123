@@ -1,6 +1,6 @@
 # Engineering Evidence
 
-This document is the profile's fact-checkable index. The profile focuses on **FrameFlux** and **Telemetry** and links back to repository code and verification paths instead of relying on arbitrary scores or performance claims.
+This document is the deeper implementation-evidence map for the profile's two architecture case studies: **FrameFlux** and **Telemetry**. The profile README also links to selected full-stack systems and merged open-source contributions. Claims are kept tied to code paths and verification paths rather than arbitrary scores or performance numbers.
 
 ## FrameFlux
 
@@ -66,16 +66,15 @@ This document is the profile's fact-checkable index. The profile focuses on **Fr
 - Telemetry supports both deterministic synthetic events and locally collected host metrics. The repository includes a host agent and authenticated ingestion API; this is implementation evidence, not a claim that a live production fleet is connected.
 - The optional HTTP probe derives latency and success/error signals from a configured URL. It does not claim to measure that service's actual application request volume.
 - The backend repository describes the current runtime as single-process. The profile does not claim horizontally distributed state or multi-worker scale.
-- No arbitrary performance numbers, usage counts, user counts or production-scale metrics are presented.
-- No Kubernetes, cloud-platform or distributed-systems expertise is claimed solely from these repositories.
-- The profile does not present forks, learning repositories or small experiments as flagship authored systems.
+- No arbitrary performance numbers, usage counts, user counts, or production-scale metrics are presented.
+- No Kubernetes, cloud-platform, or distributed-systems expertise is claimed solely from these repositories.
 
 ## Visual system
 
 - One light/dark SVG hero and matching light/dark architecture diagrams keep the profile visually consistent.
 - Graphite surfaces and a cyan/teal signal accent carry through the light and dark variants.
 - Source links and an expandable evidence map make key technical claims inspectable.
-- The README does not depend on external statistic widgets, remote badge services or decorative animations.
+- The README avoids external statistic widgets, remote badge services, and decorative animations.
 
 ## Future project contract
 
