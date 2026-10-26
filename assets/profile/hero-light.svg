@@ -1,25 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 430" role="img" aria-labelledby="title desc">
-<title id="title">Faizan Saiyed — Backend Developer, Python APIs &amp; Systems</title>
-<desc id="desc">Backend-focused engineering profile highlighting Python APIs, asynchronous workflows, realtime data, persistent state and verification.</desc>
+<title id="title">Faizan Saiyed — Backend Developer and Systems Engineer</title>
+<desc id="desc">A clean light banner showing Faizan Saiyed's focus on Python APIs, PostgreSQL, asynchronous work, and realtime systems.</desc>
 <defs>
-  <linearGradient id="fade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4F7F9"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
-  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#647384" stroke-opacity=".16"/></pattern>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F0F5F7"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#78909F" stroke-opacity=".13"/></pattern>
+  <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#08798A"/><stop offset="1" stop-color="#17A6B4"/></linearGradient>
 </defs>
-<rect width="100%" height="100%" rx="22" fill="url(#fade)"/>
-<text x="68" y="74" fill="#647384" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">SIGNAL / SYSTEMS</text>
-<text x="68" y="137" fill="#18212B" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="750">Faizan Saiyed</text>
-<text x="68" y="180" fill="#0B7285" font-family="Inter,Arial,sans-serif" font-size="23" font-weight="700">BACKEND DEVELOPER · PYTHON &amp; SYSTEMS</text>
-<text x="68" y="214" fill="#647384" font-family="Inter,Arial,sans-serif" font-size="17">Building Python APIs, asynchronous workflows and realtime data systems.</text>
-<text x="68" y="239" fill="#647384" font-family="Inter,Arial,sans-serif" font-size="17">Focused on clear boundaries, persistent state and verifiable behavior.</text>
-<path d="M68 320H1328" stroke="#647384" stroke-opacity=".55" stroke-width="1.5"/>
-<path d="M235 320 C310 280 410 280 500 320 S730 360 835 320 S1030 278 1118 320 S1225 350 1328 320" fill="none" stroke="#0B7285" stroke-width="2.4"/>
-<circle cx="235" cy="320" r="7" fill="#0B7285"/><circle cx="500" cy="320" r="7" fill="#0B7285"/><circle cx="835" cy="320" r="7" fill="#0B7285"/><circle cx="1118" cy="320" r="7" fill="#0B7285"/>
-<text x="68" y="292" fill="#647384" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" letter-spacing="2">CLIENT → API → DATA / ASYNC → REALTIME</text>
-<g><rect x="1050" y="78" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#647384" stroke-width="1.5"/>
-<text x="1068" y="104" fill="#0B7285" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">FRAMEWORK</text>
-<text x="1068" y="129" fill="#18212B" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">FastAPI · Python</text></g>
-<g><rect x="1050" y="185" width="265" height="92" rx="14" fill="#FFFFFF" stroke="#647384" stroke-width="1.5"/>
-<text x="1068" y="211" fill="#0B7285" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">FOUNDATION</text>
-<text x="1068" y="236" fill="#18212B" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">PostgreSQL · SQLAlchemy</text></g>
-<text x="68" y="370" fill="#647384" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">ARCHITECTURE · SECURITY · VERIFICATION</text>
+<rect width="1400" height="430" rx="22" fill="url(#bg)"/>
+<rect width="1400" height="430" rx="22" fill="url(#grid)"/>
+<path d="M955 -10L1400 0V430H1120C1080 325 1050 200 955 -10Z" fill="#E4EEF2" opacity=".85"/>
+<text x="68" y="70" fill="#536879" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3">SOFTWARE ENGINEERING / PROFILE</text>
+<text x="68" y="142" fill="#162632" font-family="Inter,Arial,sans-serif" font-size="59" font-weight="750">Faizan Saiyed</text>
+<text x="70" y="187" fill="#08798A" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing=".5">BACKEND DEVELOPER · PYTHON &amp; SYSTEMS</text>
+<text x="70" y="224" fill="#415665" font-family="Inter,Arial,sans-serif" font-size="17">I build APIs, data workflows, async processing, and realtime product systems.</text>
+<text x="70" y="251" fill="#5B7080" font-family="Inter,Arial,sans-serif" font-size="16">Focused on clear boundaries, authorization, and verifiable behavior.</text>
+<g>
+  <rect x="1020" y="72" width="310" height="218" rx="17" fill="#FFFFFF" stroke="#C6D5DC" stroke-width="1.5"/>
+  <text x="1045" y="104" fill="#08798A" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">CORE STACK</text>
+  <path d="M1045 120H1305" stroke="#D7E2E7"/>
+  <text x="1045" y="146" fill="#617784" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.4">API LAYER</text>
+  <text x="1045" y="168" fill="#162632" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="650">Python · FastAPI</text>
+  <path d="M1045 181H1305" stroke="#D7E2E7"/>
+  <text x="1045" y="204" fill="#617784" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.4">DATA LAYER</text>
+  <text x="1045" y="226" fill="#162632" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="650">PostgreSQL · SQLAlchemy</text>
+  <path d="M1045 239H1305" stroke="#D7E2E7"/>
+  <text x="1045" y="261" fill="#617784" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.4">ASYNC WORK</text>
+  <text x="1163" y="261" fill="#162632" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="650">Redis · Workers</text>
+</g>
+<text x="68" y="308" fill="#5B7080" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" letter-spacing="1.5">DESIGN → API → DATA → ASYNC → REALTIME</text>
+<path d="M68 339H1330" stroke="#9EB1BB" stroke-width="1.5"/>
+<path d="M68 339 C150 339 165 312 242 339 S340 364 420 339 S530 314 610 339 S720 365 800 339 S910 313 990 339 S1090 364 1170 339 S1260 318 1330 339" fill="none" stroke="url(#signal)" stroke-width="2.4"/>
+<circle cx="242" cy="339" r="5" fill="#08798A"/><circle cx="610" cy="339" r="5" fill="#08798A"/><circle cx="990" cy="339" r="5" fill="#08798A"/><circle cx="1170" cy="339" r="5" fill="#08798A"/>
+<text x="68" y="383" fill="#5B7080" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">ARCHITECTURE · SECURITY · RELIABLE WORKFLOWS</text>
 </svg>
