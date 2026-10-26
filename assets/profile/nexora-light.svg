@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 360" role="img" aria-labelledby="title desc">
+<title id="title">Nexora — competitive price intelligence</title><desc id="desc">Catalog, competitor sources, collection jobs, price observations and alerts in one tenant-scoped workflow.</desc>
+<rect width="1400" height="360" rx="22" fill="#F4F8FA"/>
+<text x="48" y="54" fill="#162632" font-family="Arial,sans-serif" font-size="26" font-weight="700">Nexora · competitive price intelligence</text>
+<text x="48" y="82" fill="#536879" font-family="Arial,sans-serif" font-size="16">From competitor source to price history and alert</text>
+<g font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#162632">
+<rect x="48" y="130" width="225" height="100" rx="14" fill="#FFFFFF" stroke="#BFD0D8" stroke-width="2"/><text x="72" y="170">Catalog</text><text x="72" y="198" fill="#08798A" font-size="13">Products · matches</text>
+<rect x="320" y="130" width="225" height="100" rx="14" fill="#FFFFFF" stroke="#BFD0D8" stroke-width="2"/><text x="344" y="170">Competitors</text><text x="344" y="198" fill="#08798A" font-size="13">Sources · URLs</text>
+<rect x="592" y="130" width="225" height="100" rx="14" fill="#FFFFFF" stroke="#BFD0D8" stroke-width="2"/><text x="616" y="170">Collection jobs</text><text x="616" y="198" fill="#08798A" font-size="13">Queue · workers</text>
+<rect x="864" y="130" width="225" height="100" rx="14" fill="#FFFFFF" stroke="#BFD0D8" stroke-width="2"/><text x="888" y="170">Price history</text><text x="888" y="198" fill="#08798A" font-size="13">Snapshots · changes</text>
+<rect x="1136" y="130" width="216" height="100" rx="14" fill="#FFFFFF" stroke="#BFD0D8" stroke-width="2"/><text x="1160" y="170">Alerts</text><text x="1160" y="198" fill="#08798A" font-size="13">Tenant scoped</text>
+</g>
+<path d="M273 180H320M545 180H592M817 180H864M1089 180H1136" stroke="#08798A" stroke-width="3"/>
+<rect x="48" y="264" width="1304" height="50" rx="12" fill="#E4F1F4"/><text x="70" y="294" fill="#08798A" font-family="Arial,sans-serif" font-size="15" font-weight="700">FASTAPI · POSTGRESQL · REDIS · CELERY · HTTPX / PLAYWRIGHT</text>
+</svg>
