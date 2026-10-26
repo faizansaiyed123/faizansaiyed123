@@ -11,7 +11,7 @@
   ·
   <a href="https://www.linkedin.com/in/faizan-saiyed-52b289228/">LinkedIn</a>
   ·
-  <a href="#open-source">Open-source contributions</a>
+  <a href="#open-source-contributions">Open-source contributions</a>
   ·
   <a href="./docs/ENGINEERING.md">Engineering evidence</a>
 </p>
