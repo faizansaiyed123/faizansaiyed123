@@ -178,7 +178,6 @@ Merged contributions to established projects:
 - [**TrustFlow SDK #586 — Export `isWalletRejection`**](https://github.com/trustflow-protocol/trustflow-sdk/pull/586) — public wallet entry-point export with regression coverage.
 - [**Sentry JavaScript #25357 — Export the `LoaderSentry` type**](https://github.com/getsentry/sentry-javascript/pull/25357) — TypeScript type for the CDN loader interface.
 - [**Sentry Python #7825 — Move active-thread tracking into Starlette**](https://github.com/getsentry/sentry-python/pull/7825) — centralizes sync-handler thread tracking.
-
 - [**Awesome Claude Agents #12 — Modernize React Component Architect agent for React 19/Next.js 14**](https://github.com/vijaythecoder/awesome-claude-agents/pull/12) — Reworked the React Component Architect agent definition to emphasize React 19, the Next.js App Router, Server Components, and current UI patterns (**Developer tooling · Markdown · React/Next.js guidance**).
 
 ## Technical toolkit
