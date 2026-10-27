@@ -173,6 +173,7 @@ The featured write-ups above go deeper on selected systems. This index brings th
 
 Merged contributions to established projects:
 
+- [**Home Assistant Frontend #54468 — Fix light color temperature gradient in RTL**](https://github.com/home-assistant/frontend/pull/54468) — RTL-aware light color temperature gradient in the Lovelace light color-temperature card feature (**Web frontend · TypeScript · CSS**).
 - [**Sentry JavaScript #25488 — Cloudflare Workers KV instrumentation**](https://github.com/getsentry/sentry-javascript/pull/25488) — tracing instrumentation for KV operations.
 - [**TrustFlow SDK #586 — Export `isWalletRejection`**](https://github.com/trustflow-protocol/trustflow-sdk/pull/586) — public wallet entry-point export with regression coverage.
 - [**Sentry JavaScript #25357 — Export the `LoaderSentry` type**](https://github.com/getsentry/sentry-javascript/pull/25357) — TypeScript type for the CDN loader interface.
