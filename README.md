@@ -174,7 +174,7 @@ The featured write-ups above go deeper on selected systems. This index brings th
 Merged contributions to established projects:
 
 - [**Home Assistant Frontend #54468 — Fix light color temperature gradient in RTL**](https://github.com/home-assistant/frontend/pull/54468) — RTL-aware light color temperature gradient in the Lovelace light color-temperature card feature (**Web frontend · TypeScript · CSS**).
-- [**Sentry JavaScript #25488 — Cloudflare Workers KV instrumentation**](https://github.com/getsentry/sentry-javascript/pull/25488) — tracing instrumentation for KV operations.
+- [**Sentry JavaScript #25488 — Cloudflare Workers KV instrumentation**](https://github.com/getsentry/sentry-javascript/pull/25488) — added tracing for Workers KV `get`, `getWithMetadata`, `put`, `delete`, and `list`; merged and included in [Sentry JavaScript SDK v11.10.0](https://github.com/getsentry/sentry-javascript/releases/tag/11.10.0).
 - [**TrustFlow SDK #586 — Export `isWalletRejection`**](https://github.com/trustflow-protocol/trustflow-sdk/pull/586) — public wallet entry-point export with regression coverage.
 - [**Sentry JavaScript #25357 — Export the `LoaderSentry` type**](https://github.com/getsentry/sentry-javascript/pull/25357) — TypeScript type for the CDN loader interface.
 - [**Sentry Python #7825 — Move active-thread tracking into Starlette**](https://github.com/getsentry/sentry-python/pull/7825) — centralizes sync-handler thread tracking.
