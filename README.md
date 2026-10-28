@@ -169,6 +169,19 @@ The featured write-ups above go deeper on selected systems. This index brings th
 | **Flow Desk** | Tenant-scoped clients, projects, tasks, time entries, invoices, API keys, and webhooks. | [Frontend](https://github.com/faizansaiyed123/flow-desk_frontend) · [Backend](https://github.com/faizansaiyed123/flow-desk_backend) | [View walkthrough](https://github.com/faizansaiyed123/flow-desk_frontend/blob/main/docs/testing/VISUAL-TEST-WALKTHROUGH.md) |
 | **Jeca Real Estate** | Real estate product with property pages, leads, agent/admin workspaces, and IDX integration plumbing. | [Frontend](https://github.com/faizansaiyed123/jeca-real-estate-frontend) · [Backend](https://github.com/faizansaiyed123/jeca-real-estate-backend) | — |
 
+## Release credits
+
+Official release notes that recognize shipped contributions:
+
+| Project / release | Shipped contribution | Release evidence |
+|---|---|---|
+| **Sentry JavaScript SDK v11.10.0** | [Cloudflare Workers KV instrumentation — PR #25488](https://github.com/getsentry/sentry-javascript/pull/25488) | [Release notes](https://github.com/getsentry/sentry-javascript/releases/tag/11.10.0) · Contributor credit |
+| **Sentry JavaScript SDK v11.9.0** | [Export the `LoaderSentry` type — PR #25357](https://github.com/getsentry/sentry-javascript/pull/25357) | [Release notes](https://github.com/getsentry/sentry-javascript/releases/tag/11.9.0) · Contributor credit |
+| **Sentry Python SDK v2.72.0** | [Move FastAPI active-thread tracking into Starlette — PR #7825](https://github.com/getsentry/sentry-python/pull/7825) | [Release notes](https://github.com/getsentry/sentry-python/releases/tag/2.72.0) · PR author credited |
+| **Home Assistant Frontend 20260930.0** | [Fix light color temperature gradient in RTL — PR #54468](https://github.com/home-assistant/frontend/pull/54468) | [Release notes](https://github.com/home-assistant/frontend/releases/tag/20260930.0) · First-contribution credit |
+
+These release pages provide public evidence that the contributions reached published software, in addition to the individual merged pull requests listed below.
+
 ## Open-source contributions
 
 Merged contributions to established projects:
