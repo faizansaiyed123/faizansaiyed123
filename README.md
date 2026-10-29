@@ -171,7 +171,7 @@ The featured write-ups above go deeper on selected systems. This index brings th
 
 ## Release credits
 
-Official release notes that recognize shipped contributions:
+My Contributions Shipped in Official Releases:
 
 | Project / release | Shipped contribution | Release evidence |
 |---|---|---|
