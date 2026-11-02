@@ -187,6 +187,7 @@ These release pages provide public evidence that the contributions reached publi
 
 Merged contributions to established projects:
 
+- [**ci-agent-audit #31 — Add Amp CLI signature**](https://github.com/layer8labs8/ci-agent-audit/pull/31) — added a signature covering the `amp` CLI, its package identifiers and execute-mode flags, and the Amp Code Review GitHub Actions container (**Developer tooling · YAML · CI/CD**).
 - [**Home Assistant Frontend #54468 — Fix light color temperature gradient in RTL**](https://github.com/home-assistant/frontend/pull/54468) — RTL-aware light color temperature gradient in the Lovelace light color-temperature card feature (**Web frontend · TypeScript · CSS**).
 - [**Sentry JavaScript #25488 — Cloudflare Workers KV instrumentation**](https://github.com/getsentry/sentry-javascript/pull/25488) — added tracing for Workers KV `get`, `getWithMetadata`, `put`, `delete`, and `list`; merged and included in [Sentry JavaScript SDK v11.10.0](https://github.com/getsentry/sentry-javascript/releases/tag/11.10.0).
 - [**TrustFlow SDK #586 — Export `isWalletRejection`**](https://github.com/trustflow-protocol/trustflow-sdk/pull/586) — public wallet entry-point export with regression coverage.
