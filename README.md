@@ -187,6 +187,7 @@ These release pages provide public evidence that the contributions reached publi
 
 Merged contributions to established projects:
 
+- [**rk-deploy #6 — Add a controller-side dry-run deploy preview**](https://github.com/anguoyang/rk-deploy/pull/6) — added `rkdeploy deploy --dry-run` to preview each selected board's package, resolved install root, and fully rendered systemd unit on the controller, with tests verifying that fleet execution, SSH commands, and SCP uploads are not invoked (**Python · CLI · Deployment tooling · Testing**). The maintainer verified the implementation and confirmed all 15 tests passed.
 - [**ci-agent-audit #31 — Add Amp CLI signature**](https://github.com/layer8labs8/ci-agent-audit/pull/31) — added a signature covering the `amp` CLI, its package identifiers and execute-mode flags, and the Amp Code Review GitHub Actions container (**Developer tooling · YAML · CI/CD**).
 - [**Home Assistant Frontend #54468 — Fix light color temperature gradient in RTL**](https://github.com/home-assistant/frontend/pull/54468) — RTL-aware light color temperature gradient in the Lovelace light color-temperature card feature (**Web frontend · TypeScript · CSS**).
 - [**Sentry JavaScript #25488 — Cloudflare Workers KV instrumentation**](https://github.com/getsentry/sentry-javascript/pull/25488) — added tracing for Workers KV `get`, `getWithMetadata`, `put`, `delete`, and `list`; merged and included in [Sentry JavaScript SDK v11.10.0](https://github.com/getsentry/sentry-javascript/releases/tag/11.10.0).
