@@ -176,6 +176,7 @@ My Contributions Shipped in Official Releases:
 
 | Project / release | Shipped contribution | Release evidence |
 |---|---|---|
+| **ci-agent-audit v0.1.4** | [Add Amp CLI signature — PR #31](https://github.com/layer8labs8/ci-agent-audit/pull/31) | [Official release notes](https://github.com/layer8labs8/ci-agent-audit/releases/tag/v0.1.4) · Explicit contributor credit |
 | **Sentry JavaScript SDK v11.10.0** | [Cloudflare Workers KV instrumentation — PR #25488](https://github.com/getsentry/sentry-javascript/pull/25488) | [Release notes](https://github.com/getsentry/sentry-javascript/releases/tag/11.10.0) · Contributor credit |
 | **Sentry JavaScript SDK v11.9.0** | [Export the `LoaderSentry` type — PR #25357](https://github.com/getsentry/sentry-javascript/pull/25357) | [Release notes](https://github.com/getsentry/sentry-javascript/releases/tag/11.9.0) · Contributor credit |
 | **Sentry Python SDK v2.72.0** | [Move FastAPI active-thread tracking into Starlette — PR #7825](https://github.com/getsentry/sentry-python/pull/7825) | [Release notes](https://github.com/getsentry/sentry-python/releases/tag/2.72.0) · PR author credited |
