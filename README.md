@@ -21,6 +21,18 @@ I build full-stack products with a backend-first focus: domain APIs, relational 
 
 <p align="center"><strong>Multi-tenant SaaS · Python APIs · PostgreSQL · Background workers · Realtime systems</strong></p>
 
+## Professional experience
+
+### Backend Developer Intern — [IT Idol Technologies](https://itidoltechnologies.com/)
+
+**Gyansetu AI** · [Product website](https://www.gyansetu.ai/)
+
+Contributed to the Gyansetu AI backend during my internship, working in the existing Python/Flask codebase, refactoring backend code, and working with PostgreSQL.
+
+**Technologies:** Python · Flask · PostgreSQL
+
+---
+
 ## Featured systems
 
 ### AgencyOS — Agency operations platform
